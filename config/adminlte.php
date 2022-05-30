@@ -453,9 +453,9 @@ return [
         
         
         [
-            'text'       => 'Cadastro de Jogos',
+            'text'       => 'Cadastro de Torneios',
             'icon' => 'far fa-edit p-1',
-            'url'        => '#',
+            'url'        => '/cadastrartorneios',
         ],
         [
             'text'       => 'Modalidades',

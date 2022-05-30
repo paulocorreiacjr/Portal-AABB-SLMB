@@ -25,3 +25,23 @@ Route::get('/portaljogos', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/cadastrartorneios', function () {
+    return view('cadastrartorneios');
+});
+
+Route::get('/modalidades', function () {
+    return view('modalidades');
+});
+
+Route::get('/equipes', function () {
+    return view('equipes');
+});
+
+Route::get('/atletas', function () {
+    return view('atletas');
+});
+
+Route::get('/jogossumula', function () {
+    return view('jogossumula');
+});

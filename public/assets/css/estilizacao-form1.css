@@ -1,0 +1,44 @@
+* {
+
+}
+
+div#cadt1 {
+    text-align: center;
+    margin-top: 4%;
+    font-size: 25px;
+    padding: 30px;
+    width: 300px;
+    margin-left: 37%;
+    background-color: blue;
+}
+
+div#cadt2 {
+    text-align: center;
+    font-size: 25px;
+    padding: 30px;
+    width: 520px;
+    height: 100px;
+    margin-left: 37%;
+    background-color: blue;
+}
+
+p#title {
+    font-size:  64px;
+    text-align: center;
+}
+
+button {
+    margin-top:2%;
+}
+
+label {
+    width: 40px;
+}
+
+form#datet1.form-control {
+    width: 200px;
+ }
+
+body {
+    background-color: yellow;
+}

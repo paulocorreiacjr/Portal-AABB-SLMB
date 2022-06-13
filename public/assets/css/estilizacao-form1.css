@@ -8,7 +8,7 @@ div#cadt1 {
     font-size: 25px;
     padding: 30px;
     width: 300px;
-    margin-left: 37%;
+    margin-left: 38%;
     background-color: blue;
 }
 
@@ -18,7 +18,7 @@ div#cadt2 {
     padding: 30px;
     width: 520px;
     height: 100px;
-    margin-left: 37%;
+    margin-left: 30%;
     background-color: blue;
 }
 
@@ -41,4 +41,13 @@ form#datet1.form-control {
 
 body {
     background-color: yellow;
+}
+tbody#postagem {
+    position: relative;
+    text-align: center;
+    display: table cell;
+}
+tr#postagem2 {
+    display: table-cell;
+    overflow-y: hidden;
 }

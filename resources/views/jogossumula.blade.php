@@ -23,55 +23,7 @@
         <div id="cadt2">
           <label>
                 <form>
-                    <input type="datetime-local" class="form-control" id="equip" placeholder="Insira a Equipe" size="40"> - <input type="text" class="form-control" id="datet1" placeholder="Equipe" size="15"> X <input type="text" class="form-control" id="datet1" placeholder="Equipe" size="15"><br>Partida 1
-                </form>
-          </label>
-            <br>
-        </div>
-        <div id="cadt2">
-          <label>
-                <form>
-                    <input type="datetime-local" class="form-control" id="equip" placeholder="Insira a Equipe" size="40"> - <input type="text" class="form-control" id="datet1" placeholder="Equipe" size="15"> X <input type="text" class="form-control" id="datet1" placeholder="Equipe" size="15"><br>Partida 2
-                </form>
-          </label>
-            <br>
-        </div>
-        <div id="cadt2">
-          <label>
-                <form>
-                    <input type="datetime-local" class="form-control" id="equip" placeholder="Insira a Equipe" size="40"> - <input type="text" class="form-control" id="datet1" placeholder="Equipe" size="15"> X <input type="text" class="form-control" id="datet1" placeholder="Equipe" size="15"><br>Partida 3
-                </form>
-          </label>
-            <br>
-        </div>
-        <div id="cadt2">
-          <label>
-                <form>
-                    <input type="datetime-local" class="form-control" id="equip" placeholder="Insira a Equipe" size="40"> - <input type="text" class="form-control" id="datet1" placeholder="Equipe" size="15"> X <input type="text" class="form-control" id="datet1" placeholder="Equipe" size="15"><br>Partida 4
-                </form>
-          </label>
-            <br>
-        </div>
-        <div id="cadt2">
-          <label>
-                <form>
-                    <input type="datetime-local" class="form-control" id="equip" placeholder="Insira a Equipe" size="40"> - <input type="text" class="form-control" id="datet1" placeholder="Equipe" size="15"> X <input type="text" class="form-control" id="datet1" placeholder="Equipe" size="15"><br>Partida 5
-                </form>
-          </label>
-        </div>
-        <div id="cadt2">
-            <br>
-          <label>
-                <form>
-                    <input type="datetime-local" class="form-control" id="equip" placeholder="Insira a Equipe" size="40"> - <input type="text" class="form-control" id="datet1" placeholder="Equipe" size="15"> X <input type="text" class="form-control" id="datet1" placeholder="Equipe" size="15"><br>Partida 6
-                </form>
-          </label>
-            <br>
-        </div>
-        <div id="cadt2">
-          <label>
-                <form>
-                    <input type="datetime-local" class="form-control" id="equip" placeholder="Insira a Equipe" size="40"> - <input type="text" class="form-control" id="datet1" placeholder="Equipe" size="15"> X <input type="text" class="form-control" id="datet1" placeholder="Equipe" size="15"><br>Partida 7
+                    <input type="datetime-local" class="form-control" id="equip" placeholder="Insira a Equipe" size="40"> - <input type="text" class="form-control" id="datet1" placeholder="Equipe" size="15"> X <input type="text" class="form-control" id="datet1" placeholder="Equipe" size="15"><br>Partida
                 </form>
           </label>
             <br>
@@ -87,7 +39,7 @@
         <div id="cadt2">
           <label>
                 <form>
-                    <input type="datetime-local" class="form-control" id="equip" placeholder="Insira a Equipe" size="40"> - <input type="text" class="form-control" id="datet1" placeholder="Equipe" size="15"> X <input type="text" class="form-control" id="datet1" placeholder="Equipe" size="15"><br>Próxima Partida
+                    <input type="time" class="form-control" id="equip" placeholder="Jogador" size="25"><br>Horário
                 </form>
           </label>
             <br>

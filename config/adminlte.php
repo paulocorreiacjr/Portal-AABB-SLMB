@@ -460,22 +460,22 @@ return [
         [
             'text'       => 'Modalidades',
             'icon' => 'fas fa-shield-alt p-1',
-            'url'        => '#',
+            'url'        => '/modalidades',
         ],
         [
             'text'       => 'Equipes',
             'icon' => 'fas fa-users p-1',
-            'url'        => '#',
+            'url'        => '/equipes',
         ],
         [
             'text'       => 'Atletas',
             'icon' => 'far fa-address-card p-1',
-            'url'        => '#',
+            'url'        => '/atletas',
         ],
         [
             'text'       => 'Jogos/Súmula',
             'icon' => 'far fa-futbol p-1',
-            'url'        => 'https://www.youtube.com/watch?v=kgMT9WMAXUo',
+            'url'        => '/jogossumula',
         ],
         
     

@@ -1,6 +1,10 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AtletaController;
+use App\Http\Controllers\ModalidadeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,13 +26,19 @@ Route::get('/portaljogos', function () {
 });
 
 
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/cadastrartorneios', function () {
-    return view('cadastrartorneios');
-});
+Route::get('/home', [HomeController::class, 'home']);
+
+Route::get('/atletas', [AtletaController::class, 'atletas'])->name('atletas');
+Route::POST('/post', [AtletaController::class, 'store']);
+
+Route::get('/modalidades', [ModalidadeController::class, 'modalidades'])->name('modalidades');
+Route::POST('/post', [ModalidadeController::class, 'store']);
+
+
+
+
 
 Route::get('/modalidades', function () {
     return view('modalidades');
@@ -38,10 +48,15 @@ Route::get('/equipes', function () {
     return view('equipes');
 });
 
-Route::get('/atletas', function () {
-    return view('atletas');
-});
+
+
+
 
 Route::get('/jogossumula', function () {
     return view('jogossumula');
 });
+
+Route::get('/equipeatletas', function () {
+    return view('equipeatletas');
+});
+

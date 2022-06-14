@@ -6,25 +6,28 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Modalidades</title>
 
+  <link href="assets\css\estilizacao-form1.css" rel="stylesheet">
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="assets/.css/all.min.css">
+  <!-- Theme style -->
   <link rel="stylesheet" href="assets/.css/adminlte.min.css">
 
   <p id="title" align="center" size="72">Modalidades</p>
 </head>
 <body>
   
-  <nav>
-    <div id="cadt1" width="80%">
-        <form action="/post" method="POST" enctype="multipart/form-data">
-        @csrf
-          <input type="text" class="form-control" name="name" id="name" placeholder="Insira a Modalidade" size="35"><br>Nome do Atleta
-          <br>
-          <input type="File" class="form-control" name="image" id="image" placeholder="Insira a Imagem da modalidade" size="40"><br>
-        
-          <input type="submit" class="btn btn-primary" value="Enviar" />
-         </form>
-          <br>
+  <nav></nav>
+    <div id="cadt1" width="100%">
+        <form action="/post.mod" method="POST" enctype="multipart/form-data">
+            @csrf
+            <input type="text" class="form-control" name="modal" id="modal" placeholder="Insira a Modalidade" size="40">Modalidades<br>
+            <br>
+            <input type="File" class="form-control" name="image" id="image" placeholder="Insira a Imagem da Modalidade" size="40"><br>
+            <input type="submit" class="btn btn-primary" value="Enviar" />
+        </form>
+        <br>
     </div>
   </nav>
 <div>
@@ -34,20 +37,19 @@
         <div class="card-header" vertical align="middle">
         <!-- /.card-header -->
         <div class="card-body table-responsive p-0" vertical align="middle">
-          <table class="table table-head-fixed text-nowrap" width="400px" dissplay="table">
+          <table class="table table-head-fixed text-nowrap" width="100%" dissplay="table">
             <thead>
               <tr>
                 <th>ID</th>
-                <th>Nome da modalidade</th>
-                <th>Imagem</th>
+                <th>Nome da Modalidae</th>
+                <th>Imagem da Modalidade</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody id="postagem2">
               <tr>
                 @foreach ($modalidades as $modalidade)
-                <td>{{ $modalidade->id }}</td>
-                <td>{{ $modalidade->name }}</td>
-                <td><img src="{{ asset('image/modalidades/'.$modalidadev->image) }}" width="25px"/></td>
+                <td>{{ $modalidade->modaidades }}</td>
+                <td><img src="{{ asset('image/modalidades/'.$modalidade->image) }}" width="25px"/></td>
                 @endforeach<br>
               </tr> 
             </tbody>

@@ -1,27 +1,34 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Models\Modalidade;
 use Illuminate\Http\Request;
 
 class ModalidadeController extends Controller
 {
-    public function modalidades()
-    {   
+    public function modalidades_esportivas() {
+
         $modalidades = Modalidade::orderBy('id', 'DESC')->get();
 
-        return view('modalidades', ['modal' => $modalidades]);
+        return view('modalidades_esportivas', ['modalidades' => $modalidades]);
     }
 
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function store(Request $request)
     {
-        $modalidades = new Modalidade;
+        $aabb = new Modalidade;
 
         $request->validate([
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            
-        
+
         ]);
+
+
 
         $imageName = time().'.'.$request->image->extension();
 
@@ -29,17 +36,14 @@ class ModalidadeController extends Controller
             return false;
         }
 
-        $request->image->move(public_path('image/modalidades'), $imageName);
+        $request->image->move(public_path('image/modalidade'), $imageName);
 
-
-        $modalidades->modalidades = $request->modalidades;
-        $modalidades->image = $imageName;
-
-        $modalidades->save();
-
-
-        return redirect('/modalidades');
+        $aabb->modalidades = $request->modalidades;
+        $aabb->image = $imageName;
         
-     
+        $aabb->save();
+
+        return redirect('modalidades_esportivas');
+
     }
 }

@@ -7,17 +7,7 @@ use App\Http\Controllers\AtletaController;
 use App\Http\Controllers\ModalidadeController;
 use App\Http\Controllers\TorneioController;
 use App\Http\Controllers\EquipeController;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+use App\Http\Controllers\JogoController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -27,6 +17,10 @@ Route::get('/portaljogos', function () {
     return view('portaljogos');
 });
 
+
+Route::get('/home', function () {
+    return view('home');
+})->middleware(['auth'])->name('home');
 
 
 
@@ -44,5 +38,6 @@ Route::POST('/post.torneio', [TorneioController::class, 'store']);
 Route::get('/equipe', [EquipeController::class, 'equipe'])->name('equipe');
 Route::POST('/post.equipe', [EquipeController::class, 'store']);
 
-
+Route::get('/jogos', [JogoController::class, 'jogos'])->name('jogos');
+Route::POST('/post.jogos', [JogoController::class, 'store']);
 

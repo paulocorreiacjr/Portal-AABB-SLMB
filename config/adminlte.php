@@ -455,17 +455,17 @@ return [
         [
             'text'       => 'Cadastro de Torneios',
             'icon' => 'far fa-edit p-1',
-            'url'        => '/cadastrartorneios',
+            'url'        => '/torneio',
         ],
         [
             'text'       => 'Modalidades',
             'icon' => 'fas fa-shield-alt p-1',
-            'url'        => '/modalidades',
+            'url'        => '/modalidades_esportivas',
         ],
         [
             'text'       => 'Equipes',
             'icon' => 'fas fa-users p-1',
-            'url'        => '/equipes',
+            'url'        => '/equipe',
         ],
         [
             'text'       => 'Atletas',
@@ -475,7 +475,7 @@ return [
         [
             'text'       => 'Jogos/Súmula',
             'icon' => 'far fa-futbol p-1',
-            'url'        => '/jogossumula',
+            'url'        => '/jogos',
         ],
         
     

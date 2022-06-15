@@ -76,7 +76,7 @@
                         <div class="main-nav__main-navigation">
                             <ul class="main-nav__navigation-box">
                                 <li>
-                                    <a href="#">Home</a>
+                                    <a href="#">Dashboard</a>
                                 </li>
                                 <li class="dropdown">
                                     <a href="#">O Clube</a>
@@ -447,7 +447,7 @@
                         <div class="footer-widget footer-widget__links__widget-1">
                             <div class="footer-widget__inner">
                                 <ul class="footer-widget__links-list list-unstyled">
-                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Dashboard</a></li>
                                     <li><a href="#">O Clube</a></li>
                                     <li><a href="#">Notícias</a></li>
                                 </ul><!-- /.footer-widget__links-list -->

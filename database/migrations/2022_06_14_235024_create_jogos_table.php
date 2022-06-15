@@ -15,14 +15,14 @@ return new class extends Migration
     {
         Schema::create('jogos', function (Blueprint $table) {
             $table->id();
-            $table->string('torneio');
+            $table->string('torneios');
             $table->string('partida');
             $table->string('local');
             $table->string('data');
             $table->string('horario');
-            $table->int('gols');
-            $table->string('cardamarelo');
-            $table->string('cardvermelhlo');
+            $table->string('gols');
+            $table->string('cartaoamarelo');
+            $table->string('cartaovermelho');
             $table->timestamps();
         });
     }

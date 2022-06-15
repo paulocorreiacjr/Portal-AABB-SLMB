@@ -24,7 +24,6 @@ Route::get('/home', function () {
 
 
 
-Route::get('/home', [HomeController::class, 'home']);
 
 Route::get('/atletas', [AtletaController::class, 'atletas'])->name('atletas');
 Route::POST('/post', [AtletaController::class, 'store']);
@@ -41,3 +40,13 @@ Route::POST('/post.equipe', [EquipeController::class, 'store']);
 Route::get('/jogos', [JogoController::class, 'jogos'])->name('jogos');
 Route::POST('/post.jogos', [JogoController::class, 'store']);
 
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});

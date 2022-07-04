@@ -7,6 +7,7 @@
 @stop
 
 @section('content')
+
     <section>
         <footer>
             <strong>Copyright &copy; 2022 <a href="https:fsixtecnologia.com.br">FSIX Tecnologia</a>.</strong> Todos os direitos reservados.

@@ -22,11 +22,16 @@ Route::get('/home', function () {
     return view('home');
 })->middleware(['auth'])->name('home');
 
+Route::get('/teste', function () {
+    return view('teste');
+});
+
 
 
 
 Route::get('/atletas', [AtletaController::class, 'atletas'])->name('atletas');
-Route::POST('/post', [AtletaController::class, 'store']);
+Route::POST('/posts', [AtletaController::class, 'store']);
+Route::delete('/atletas/{id}', [AtletaController::class, 'destroy']);
 
 Route::get('/modalidades_esportivas', [ModalidadeController::class, 'modalidades_esportivas'])->name('modalidades_esportivas');
 Route::POST('/post.mod', [ModalidadeController::class, 'store']);

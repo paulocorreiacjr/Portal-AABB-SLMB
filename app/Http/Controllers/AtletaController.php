@@ -59,4 +59,9 @@ class AtletaController extends Controller
         
      
     }
+
+    public function destroy ($id) {
+       Atleta::findorfail($id)->delete();
+       return redirect('/atletas')->with('msg, Item excluído com sucesso');
+    }
 }

@@ -160,7 +160,7 @@
                                     <a href="#" class="course-one__cat">FUTEBOL</a>
                                     <div class="course-one__image-inner">
                                         <img src="assets/image/courses/course-1-1.jpg" alt="">
-                                        <a href="#"><i class="scubo-icon-plus-symbol"></i></a>
+                                        <a href="#"><i class=""></i></a>
                                     </div><!-- /.course-one__image-inner -->
                                 </div><!-- /.course-one__image -->
                                 <div class="course-one__content hvr-sweep-to-bottom">

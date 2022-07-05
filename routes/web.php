@@ -17,6 +17,10 @@ Route::get('/portaljogos', function () {
     return view('portaljogos');
 });
 
+Route::get('/listadejogos', function () {
+    return view('listadejogos');
+});
+
 
 Route::get('/home', function () {
     return view('home');

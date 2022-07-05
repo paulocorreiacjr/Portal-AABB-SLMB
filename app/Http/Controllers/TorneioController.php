@@ -35,4 +35,9 @@ class TorneioController extends Controller
         
      
     }
+
+    public function destroy ($id) {
+        Torneio::findorfail($id)->delete();
+        return redirect('/torneio')->with('msg, Item excluído com sucesso');
+     }
 }

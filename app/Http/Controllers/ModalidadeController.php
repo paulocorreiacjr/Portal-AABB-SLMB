@@ -46,4 +46,9 @@ class ModalidadeController extends Controller
         return redirect('modalidades_esportivas');
 
     }
+
+    public function destroy ($id) {
+        Modalidade::findorfail($id)->delete();
+        return redirect('/modalidades_esportivas')->with('msg, Item excluído com sucesso');
+     }
 }

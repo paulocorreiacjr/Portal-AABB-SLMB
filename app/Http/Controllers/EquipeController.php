@@ -37,4 +37,9 @@ class EquipeController extends Controller
 
     }
 
+    public function destroy ($id) {
+        Equipe::findorfail($id)->delete();
+        return redirect('/atletas')->with('msg, Item excluído com sucesso');
+     }
+
 }

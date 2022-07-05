@@ -35,12 +35,17 @@ Route::delete('/atletas/{id}', [AtletaController::class, 'destroy']);
 
 Route::get('/modalidades_esportivas', [ModalidadeController::class, 'modalidades_esportivas'])->name('modalidades_esportivas');
 Route::POST('/post.mod', [ModalidadeController::class, 'store']);
+Route::delete('/modalidades_esportivas/{id}', [ModalidadeController::class, 'destroy']);
 
 Route::get('/torneio', [TorneioController::class, 'torneio'])->name('torneio');
 Route::POST('/post.torneio', [TorneioController::class, 'store']);
+Route::delete('/torneio/{id}', [TorneioController::class, 'destroy']);
+
 
 Route::get('/equipe', [EquipeController::class, 'equipe'])->name('equipe');
 Route::POST('/post.equipe', [EquipeController::class, 'store']);
+Route::delete('/equipe/{id}', [EquipeController::class, 'destroy']);
+
 
 Route::get('/jogos', [JogoController::class, 'jogos'])->name('jogos');
 Route::POST('/post.jogos', [JogoController::class, 'store']);

@@ -22,15 +22,15 @@
                 <div class="card-body">
                   <div class="form-group">
                     <label for=>Equipe</label>
-                    <input type="text" class="form-control" name="team" id="team" placeholder="Insira o Nome do Atleta">
+                    <input type="text" class="form-control" name="team" id="team" placeholder="Insira o Nome da Equipe">
                   </div>
                   <div class="form-group">
                     <label>Modalidade</label>
-                    <input type="text" class="form-control" name="modalidade" id="modalidade" placeholder="Insira a Data de Nascimento">
+                    <input type="text" class="form-control" name="modalidade" id="modalidade" placeholder="Insira a Modalidade">
                   </div>
                   <div class="form-group">
                     <label>Cidade</label>
-                    <input type="text" class="form-control" name="cidade" id="cidade" placeholder="Insira o Nome da Equipe">
+                    <input type="text" class="form-control" name="cidade" id="cidade" placeholder="Insira a Cidade">
                   </div>
                   <div class="form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">

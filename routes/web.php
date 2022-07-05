@@ -41,14 +41,13 @@ Route::get('/torneio', [TorneioController::class, 'torneio'])->name('torneio');
 Route::POST('/post.torneio', [TorneioController::class, 'store']);
 Route::delete('/torneio/{id}', [TorneioController::class, 'destroy']);
 
-
 Route::get('/equipe', [EquipeController::class, 'equipe'])->name('equipe');
 Route::POST('/post.equipe', [EquipeController::class, 'store']);
 Route::delete('/equipe/{id}', [EquipeController::class, 'destroy']);
 
-
 Route::get('/jogos', [JogoController::class, 'jogos'])->name('jogos');
 Route::POST('/post.jogos', [JogoController::class, 'store']);
+Route::delete('/jogos/{id}', [JogoController::class, 'destroy']);
 
 
 Route::middleware([

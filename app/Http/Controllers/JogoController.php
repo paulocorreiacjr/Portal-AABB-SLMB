@@ -41,4 +41,9 @@ class JogoController extends Controller
         return redirect('/jogos');
 
     }
+
+    public function destroy ($id) {
+        Jogo::findorfail($id)->delete();
+        return redirect('/jogos')->with('msg, Item excluído com sucesso');
+     }
 }

@@ -272,7 +272,7 @@ return [
 
         [
         'text' => 'Configuração de Conteúdo',
-        'url'  => 'admin/settings',
+        /*'url'  => 'admin/settings',*/
         'icon' => '',
         ],
         /*
